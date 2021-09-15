@@ -35,6 +35,8 @@ public class ArrayMax {
 				if (this.array[i][j] > this.max)
 				{
 					this.max = this.array[i][j];
+					maxX = i;
+					maxY = j;
 				}
 			}
 		}
@@ -57,7 +59,7 @@ public class ArrayMax {
 	
 	public void displayMax()
 	{
-		System.out.println("The maximum value of the array is: " + this.max);
+		System.out.println("The maximum value of the array is: " + this.max + " at (" + maxX + ", " + maxY + ")");
 	}
 	
 	public static void main(String[] args) {
