@@ -4,6 +4,7 @@ public class ArgSum {
 
 	public static void main(String[] args) {
 		Double sum = 0.0;
+		StringBuffer sumStrings = new StringBuffer();
 		for (String a: args)
 		{
 			try
@@ -12,10 +13,11 @@ public class ArgSum {
 			}
 			catch (Exception e)
 			{
-				System.out.println(a + " is not a number.");
+				sumStrings.append(a);
 			}
 		}
 		System.out.println("The sum of the number value args is: " + sum);
+		System.out.println("The concatenated version of the string args is: " + sumStrings);
 	}
 
 }
