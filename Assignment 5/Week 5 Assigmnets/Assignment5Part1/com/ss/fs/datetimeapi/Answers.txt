@@ -1,0 +1,14 @@
+1. LocalDateTime
+
+2. date.with(TemporalAdjuster.previous(DayOfWeek.THURSDAY));
+
+3. ZoneOffset tracks an offset from UTC	time. ZoneID uses that and ZoneRules to determine how the offset changes with regards to time of year and region.
+
+4. 	ZonedDateTime zdt = Instant.now().atZone(ZoneId.systemDefault());
+	Instant inst = ZonedDateTime.now().toInstant();
+
+5. see MonthLength.java
+
+6. see Mondays.java
+
+7. see Friday.java
