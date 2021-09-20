@@ -1,6 +1,16 @@
 package com.ss.fs.lambda;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class LambdaSortImpl {
+	public static void printArray(String[] arr)
+	{
+		for (String s : arr)
+		{
+			System.out.println(s);
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -83,9 +93,23 @@ public class LambdaSortImpl {
 			
 		};
 		
+		String[] strings = {"alpha", "beta", "gamma", "delta", "epsilon"};
 		
+		String[] len_sorted = sort_len.sort(strings);
+		System.out.println("-----Sorted by length-----");
+		printArray(len_sorted);
 		
+		String[] rev_len_sorted = sort_rev_len.sort(strings);
+		System.out.println("-----Sorted by reverse length-----");
+		printArray(rev_len_sorted);
 		
+		String[] alpha_sorted = sort_alphabetical.sort(strings);
+		System.out.println("-----Sorted by alphabetical-----");
+		printArray(alpha_sorted);
+		
+		String[] e_sorted = sort_e.sort(strings);
+		System.out.println("-----Sorted by e-----");
+		printArray(e_sorted);
 	}
 
 }
